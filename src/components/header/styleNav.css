@@ -1,0 +1,18 @@
+.home_page {
+  position: sticky;
+  top: 40px;
+  left: 70px;
+  width: 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box_home {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 5px;
+  color: #fff;
+}
