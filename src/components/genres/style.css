@@ -1,16 +1,18 @@
 .select_box {
   position: sticky;
-  width: 200px;
+  width: 13vw;
 
-  top: 170px;
-  left: 50px;
-
-  font-size: 24px;
+  box-sizing: content-box;
+  top: 20vh;
+  left: 2vw;
+  z-index: 1;
+  font-size: 22px;
   line-height: 28px;
   font-weight: 700;
 }
 
 select {
+  width: 11vw;
   border: none;
   outline: 0;
   outline-offset: 0;
@@ -18,11 +20,85 @@ select {
   background-color: hsla(0, 0%, 100%, 0.16);
   border-radius: 20px;
   line-height: 14px;
-  /* color: hsla(0, 0%, 100%, 0.6); */
 
   font-size: 18px;
 }
 
 select > option {
   color: rgb(6, 6, 6);
+}
+
+@media (max-width: 1200px) {
+  .select_box {
+    top: ;
+    left: ;
+    margin-left: ;
+  }
+  h2 {
+    margin: 0;
+    font-size: 22px;
+  }
+
+  select {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .select_box {
+    top: ;
+    left: ;
+  }
+  h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  select {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .select_box {
+    top: ;
+    left: ;
+  }
+  h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  select {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .select_box {
+    top: ;
+    left: ;
+  }
+  h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  select {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 431px) {
+  .select_box {
+    top: ;
+    left: ;
+  }
+  h2 {
+    font-size: 15px;
+  }
+
+  select {
+    font-size: 12px;
+  }
 }

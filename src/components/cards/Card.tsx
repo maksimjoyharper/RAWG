@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { IGames } from "../../data/models";
 import "./styleCard.css";
 import { useState, useRef } from "react";
-import { useClickOutside } from "../hooks/useClickOutside";
+// import { useClickOutside } from "../hooks/useClickOutside";
 
 type CardProps = {
   card: IGames;
@@ -12,15 +12,16 @@ export function Card({ card }: CardProps) {
   const [isOpenPlatforms, setIsOpenPlatforms] = useState(false);
 
   const menuRef = useRef(null);
-  useClickOutside(menuRef, () => {
-    if (isOpenPlatforms) setTimeout(() => setIsOpenPlatforms(false), 50);
-  });
+  // useClickOutside(menuRef, () => {
+  //   if (isOpenPlatforms) setTimeout(() => setIsOpenPlatforms(false), 50);
+  // });
   return (
     <Link to={`${card.id}`} style={{ textDecoration: "none" }}>
       <div className="card">
         <img src={card.background_image} className="img_card" />
         <h3 className="name_game">{card.name}</h3>
-        <p>Rating: {card.rating}</p>
+        {/* <div className="rating_title_platform"> */}
+        <p className="rating_title">Rating: {card.rating}</p>
         <button
           className="platforms__btn"
           onClick={(event: React.MouseEvent) => {
@@ -30,6 +31,7 @@ export function Card({ card }: CardProps) {
         >
           Platforms
         </button>
+        {/* </div> */}
         <div
           className={`platforms ${isOpenPlatforms ? "active" : ""}`}
           ref={menuRef}

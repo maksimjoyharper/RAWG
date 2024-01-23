@@ -3,7 +3,7 @@ import { API_KEY } from "../data/key-api";
 export function getGames(
   search: string,
   genre: string,
-  page: number = 1
+  page: number
   // pageSize: number
 ) {
   const searchParams = new URLSearchParams();

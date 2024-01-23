@@ -27,7 +27,7 @@ export const Genre: React.FC<GenreProps> = (props) => {
     <>
       <div className="select_box">
         {" "}
-        <h2>Genres</h2>
+        <h2>Genres:</h2>
         <select
           required
           name="genres"

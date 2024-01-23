@@ -15,7 +15,6 @@ export function RenderCards() {
   const [genre, setGenre] = useState("all");
 
   const { debounsedSearch } = useSearchContext();
-
   const [page, setPage] = useState(2);
 
   useEffect(() => {

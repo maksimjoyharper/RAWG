@@ -20,27 +20,18 @@ export const App = () => {
     <>
       {" "}
       <SearchProvider>
-        <main
-          className="container_game"
-          style={{
-            overflow: "hidden",
-            minHeight: "900px",
-          }}
-        >
-          {transitions((style, item) => (
-            <animated.div style={style}>
-              <div style={{}}>
-                {" "}
-                <Routes location={item}>
-                  <Route path="/" element={<Layout />}>
-                    <Route path="/:id" element={<GameIntro />} />
-                    <Route path="/" element={<RenderCards />} />
-                  </Route>
-                </Routes>
-              </div>
-            </animated.div>
-          ))}
-        </main>
+        {/* <main className="container_game"> */}
+        {transitions((style, item) => (
+          <animated.div className="div_animated" style={style}>
+            <Routes location={item}>
+              <Route path="/" element={<Layout />}>
+                <Route path="/RAWG" element={<RenderCards />} />
+                <Route path="/RAWG/:id" element={<GameIntro />} />
+              </Route>
+            </Routes>
+          </animated.div>
+        ))}
+        {/* </main> */}
       </SearchProvider>
     </>
   );

@@ -29,7 +29,13 @@ export const GameIntro = () => {
         <>
           <div className="game_intro_box">
             <div className="center_info">
-              <div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
                 {" "}
                 <h1 className="name">{param.name}</h1>
                 <span className="released">
@@ -43,7 +49,7 @@ export const GameIntro = () => {
                 alt=""
               />
             </div>
-            <p style={{ fontSize: "24px", marginTop: "15px" }}>About:</p>
+            <p className="about_game_title">About game:</p>
             <p className="game_description">{param.description_raw}</p>
           </div>
         </>

@@ -1,33 +1,20 @@
 #container {
   position: relative;
-  max-width: 1232px;
-  margin-top: 100px;
-  margin-bottom: 60px;
-  margin-left: 300px;
-  padding-bottom: 50px;
-
+  width: 93vw;
+  margin: 0;
+  margin-left: 12vw;
+  padding-right: 7vw;
+  z-index: -1;
   display: grid;
-  grid-template-columns: repeat(4, 290px);
-  justify-items: center;
-  gap: 24px;
+  justify-content: center;
+  grid-template-columns: repeat(4, 20vw);
+  gap: 16px;
 }
-
-/* ::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: white;
-}
-::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 8px;
-} */
 
 .card {
   position: relative;
-  width: 290px;
-  height: 380px;
+  width: 20vw;
+  height: 50vh;
   padding-bottom: 100px;
   box-sizing: border-box;
   border-radius: 12px;
@@ -35,30 +22,23 @@
   color: white;
   text-align: left;
 
+  box-shadow: 7px 5px 5px rgb(97, 96, 96);
+
   background-size: cover;
   background-repeat: no-repeat;
-
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
 .card:hover {
   transform: scale(1.15);
   z-index: 3;
-}
-
-#paginatoin_box {
-  position: absolute;
-  bottom: 0;
-  width: 750px;
-  margin: 0 auto;
-
-  background-color: rgb(59, 59, 59);
-  border-radius: 10px;
+  background-color: rgb(94, 93, 93);
+  color: rgb(43, 43, 43);
+  box-shadow: none;
 }
 
 .img_card {
-  width: 100%;
-  height: 180px;
+  width: 20vw;
+  height: 30vh;
   margin-bottom: 10px;
 
   border-top-right-radius: 12px;
@@ -67,12 +47,21 @@
 
 .name_game {
   font-family: Open, Helvetica, sans-serif;
+  margin: 0 auto;
   margin-left: 10px;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: 700;
   text-decoration: none;
 }
+.rating_title {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
 .release_data {
   position: absolute;
   bottom: 0;
@@ -93,12 +82,16 @@
 }
 
 .platforms__btn {
-  margin-left: auto;
-  width: 70px;
-  height: 20px;
+  width: 5vw;
+  height: 3vh;
+  margin-top: 10px;
+  margin-left: 10px;
   padding: 0;
   border: 0;
+  border-radius: 7px;
+  text-align: center;
 
+  background-color: #616161;
   color: black;
   cursor: pointer;
 }
@@ -140,4 +133,288 @@
 .check__observe {
   width: 100%;
   height: 5px;
+}
+@media (max-width: 1400px) {
+  #container {
+    gap: 12px;
+  }
+
+  .card {
+    padding-bottom: 70px;
+    box-shadow: 1px 1px 1px rgb(97, 96, 96);
+  }
+
+  .img_card {
+    margin-bottom: 5px;
+  }
+
+  .name_game {
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .rating_title {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 8px;
+  }
+
+  .release_data {
+    margin-left: 5px;
+    right: 20px;
+    font-size: 12px;
+  }
+
+  .relesae_text {
+    font-size: 10px;
+  }
+
+  .platforms__btn {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #container {
+    gap: 12px;
+  }
+
+  .card {
+    padding-bottom: 70px;
+    box-shadow: 1px 1px 1px rgb(97, 96, 96);
+  }
+
+  .img_card {
+    margin-bottom: 5px;
+  }
+
+  .name_game {
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .rating_title {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 8px;
+  }
+
+  .release_data {
+    margin-left: 5px;
+    right: 20px;
+    font-size: 12px;
+  }
+
+  .relesae_text {
+    font-size: 10px;
+  }
+
+  .platforms__btn {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 992px) {
+  #container {
+    gap: 8px;
+  }
+
+  .card {
+    padding-bottom: 70px;
+    box-shadow: 1px 1px 1px rgb(97, 96, 96);
+  }
+
+  .img_card {
+    margin-bottom: 5px;
+  }
+
+  .name_game {
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .rating_title {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 8px;
+  }
+
+  .release_data {
+    margin-left: 5px;
+    right: 20px;
+    font-size: 12px;
+  }
+
+  .relesae_text {
+    font-size: 10px;
+  }
+
+  .platforms__btn {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    grid-template-columns: repeat(3, 26vw);
+    gap: 12px;
+  }
+
+  .card {
+    width: 26vw;
+    height: 50vh;
+    padding-bottom: 70px;
+    box-shadow: 1px 1px 1px rgb(97, 96, 96);
+  }
+
+  .img_card {
+    width: 26vw;
+    height: 20vh;
+    margin-bottom: 5px;
+  }
+
+  .name_game {
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .rating_title {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 8px;
+  }
+
+  .release_data {
+    margin-left: 5px;
+    right: 20px;
+    font-size: 12px;
+  }
+
+  .relesae_text {
+    font-size: 10px;
+  }
+
+  .platforms__btn {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 576px) {
+  #container {
+    grid-template-columns: repeat(3, 27vw);
+    gap: 8px;
+  }
+
+  .card {
+    width: 27vw;
+    height: 57vh;
+    padding-bottom: 70px;
+    box-shadow: 1px 1px 1px rgb(97, 96, 96);
+  }
+
+  .img_card {
+    width: 27vw;
+    height: 28vh;
+    margin-bottom: 5px;
+  }
+
+  .name_game {
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .rating_title {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 8px;
+  }
+
+  .release_data {
+    margin-left: 5px;
+    right: 20px;
+    font-size: 12px;
+  }
+
+  .relesae_text {
+    font-size: 10px;
+  }
+
+  .platforms__btn {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 431px) {
+  #container {
+    grid-template-columns: repeat(3, 25vw);
+    gap: 8px;
+  }
+
+  .card {
+    width: 25vw;
+    height: 20vh;
+    padding-bottom: 70px;
+    box-shadow: 1px 1px 1px rgb(97, 96, 96);
+  }
+
+  .img_card {
+    width: 25vw;
+    height: 10vh;
+    margin-bottom: 5px;
+  }
+
+  .name_game {
+    margin-left: 5px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .rating_title {
+    margin: 0;
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    font-size: 7px;
+    line-height: 6px;
+  }
+
+  .release_data {
+    margin-left: 5px;
+    right: 20px;
+    font-size: 4px;
+  }
+
+  .relesae_text {
+    font-size: 6px;
+  }
+
+  .platforms__btn {
+    width: 8vw;
+    height: 1vh;
+    margin-top: 1px;
+    margin-left: 5px;
+    font-size: 5px;
+  }
 }

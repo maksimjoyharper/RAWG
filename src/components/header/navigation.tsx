@@ -7,7 +7,7 @@ export const Header = () => {
     <>
       <header className="home_page">
         {" "}
-        <Link className="box_home" to={"/"}>
+        <Link className="box_home" to={"/RAWG"}>
           RAWG
         </Link>
         <Search />

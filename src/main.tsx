@@ -1,7 +1,6 @@
 import ReactDOM from "react-dom/client";
 
 import "antd/dist/reset.css";
-import "./index.css";
 import "./style.css";
 
 import { BrowserRouter } from "react-router-dom";
