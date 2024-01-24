@@ -3,10 +3,10 @@
   color: azure;
   text-align: center;
 
-  font-size: 4vw;
+  font-size: 2vw;
 }
 .name {
-  font-size: 6vw;
+  font-size: 4vw;
 
   font-weight: 700;
 }
@@ -16,14 +16,14 @@
   margin-top: 50px;
 }
 .about_game_title {
-  font-size: 4w;
+  font-size: 3vw;
   margin-top: 15px;
 }
 
 .game_description {
   margin-top: 20px;
 
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 .image_game {
   width: 60%;
